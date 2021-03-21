@@ -45,7 +45,7 @@ function Home() {
     <div>
       <h1>Título de tabla</h1>
 
-      {data != undefined ? (
+      {data !== undefined ? (
         <Table dataSource={data} columns={columns} />
       ) : (
         <h1>No hay datos aún </h1>
@@ -53,7 +53,7 @@ function Home() {
       <Button type="primary" onClick={() => setData()} danger>
         Presióname
       </Button>
-      {data != undefined ? <RafaCard data={data} /> : <></>}
+      {data !== undefined ? <RafaCard data={data} /> : <></>}
     </div>
   );
 }
